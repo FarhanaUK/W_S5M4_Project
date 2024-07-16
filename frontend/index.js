@@ -14,7 +14,40 @@ async function moduleProject4() {
     ["Partly Cloudy", "⛅️"]
   ]
 
-  // 👉 Tasks 1 - 5 go here
+  let widget = document.querySelector('#weatherWidget')
+  widget.style.display = "none"
+  
+
+  
+
+  let options = document.querySelectorAll('option')
+  let select = document.querySelector('#citySelect')
+  select.addEventListener('change', evt =>{
+  options.forEach(city => {
+    if(city.selected)
+ console.log(`${city.textContent} was selected`)
+try {
+evt.target.setAttribute('disabled', 'disabled')
+ widget.style.display = "none"
+ document.querySelector('.info').textContent = "Fetching weather data..."
+}
+catch(err) {
+console.log("error")
+}
+  })
+  })
+   
+ 
+
+ const weatherURL = 'http://localhost:3003/api/weather'
+ axios.get(weatherURL)
+ 
+ .catch(error)
+console.log(error.message)
+ .finally()
+
+ 
+ 
 
   // 👆 WORK WORK ABOVE THIS LINE 👆
 
