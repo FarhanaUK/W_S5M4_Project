@@ -39,7 +39,7 @@ Make sure to read and follow the instructions below carefully. Good luck!
 
 1. After successful installation, open two terminal windows at the project folder and **execute `npm start` in your first terminal and `npm test` in your second**.
 
-1. You will load the app in Chrome by **navigating the browser to `http://localhost:3003`**.
+1. You will load the app in Chrome by **navigating the browser to ``**.http://localhost:3003
 
 1. If you haven't already, install the [Eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) for VSCode.
 

@@ -1,8 +1,12 @@
 const express = require('express')
 const path = require('path')
+const cors = require('cors');
+
 const { getWeather } = require('./data')
 
+
 const server = express()
+server.use(cors());
 const port = process.env.PORT || 3003
 
 server.use(express.json())
